@@ -62,6 +62,9 @@ const HomePage = () => {
         <Link href="/signup">
           Signup
         </Link>
+        <Link href="/signup">
+          Signup
+        </Link>
       </div>
     </div>
   );
