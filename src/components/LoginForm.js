@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useRouter } from 'next/navigation'; // Import useRouter hook
+import { useRouter } from 'next/navigation'; 
+import Link from 'next/link';
 
 const LoginForm = () => {
   const router = useRouter(); // Initialize useRouter hook
@@ -42,7 +43,10 @@ const LoginForm = () => {
         Password:
         <input type="password" name="password" value={formData.password} onChange={handleChange} />
       </label>
+      <Link href="/dashboard" >
       <button type="submit">Login</button>
+      </Link>
+      
     </form>
   );
 };
