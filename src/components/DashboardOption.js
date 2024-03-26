@@ -1,11 +1,14 @@
+
+
 import React from 'react';
 import Link from 'next/link';
 import styles from "@/ui/dashboard/dashboard.module.css"
 
-const DashboardOption = ({ title, link }) => {
+const DashboardOption = ({ title, link, count }) => {
   return (
     <div className={styles.itemLink}>
-      <h2>{title}</h2>
+      <h4>{title}</h4>
+      <p>{count}</p>
       <Link href={link}>
         View
       </Link>
@@ -14,3 +17,4 @@ const DashboardOption = ({ title, link }) => {
 };
 
 export default DashboardOption;
+

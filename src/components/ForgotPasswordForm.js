@@ -1,5 +1,6 @@
 // ForgotPasswordPage.js
 "use client";
+// ForgotPasswordPage.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import styles from "@/ui/forgotpassword/forgot.module.css";
@@ -24,16 +25,16 @@ const ForgotPasswordPage = () => {
   };
 
   return (
-    <div className={styles.container}> {/* Apply container style */}
-      <h1 className={styles.title}>Forgot Password</h1> {/* Apply title style */}
-      <form className={styles.form} onSubmit={handleSubmit}> {/* Apply form style */}
+    <div className={styles.container}>
+      <h1 className={styles.title}>Forgot Password</h1>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <label className={styles.label}>
           Email:
-          <input className={styles.input} type="email" value={email} onChange={handleChange} /> {/* Apply input style */}
+          <input className={styles.input} type="email" value={email} onChange={handleChange} placeholder="Enter your email" />
         </label>
-        <button className={styles.button} type="submit">Submit</button> {/* Apply button style */}
+        <button className={styles.button} type="submit">Submit</button>
       </form>
-      {message && <p className={styles.message}>{message}</p>} {/* Apply message style */}
+      {message && <p className={styles.message}>{message}</p>}
     </div>
   );
 };

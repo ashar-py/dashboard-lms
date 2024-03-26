@@ -6,9 +6,11 @@ import styles from "@/ui/signup/signup.module.css";
 
 const SignupForm = () => {
   const [formData, setFormData] = useState({
-    username: '',
+    salutation: '',
+    name: '',
     email: '',
-    password: ''
+    password: '',
+    confirmPassword: ''
   });
 
   const handleChange = (e) => {
@@ -30,11 +32,21 @@ const SignupForm = () => {
   };
 
   return (
-    <div className={styles.container}> {/* Apply container style */}
-      <form className={styles.form} onSubmit={handleSubmit}> {/* Apply form style */}
+    <div className={styles.container}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <label className={styles.label}>
-          Username:
-          <input className={styles.input} type="text" name="username" value={formData.username} onChange={handleChange} />
+          Salutation:
+          <select className={styles.input} name="salutation" value={formData.salutation} onChange={handleChange}>
+            <option value="">Select</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+            <option value="Miss">Miss</option>
+            <option value="Ms.">Ms.</option>
+          </select>
+        </label>
+        <label className={styles.label}>
+          Your Name:
+          <input className={styles.input} type="text" name="name" value={formData.name} onChange={handleChange} />
         </label>
         <label className={styles.label}>
           Email:
@@ -44,7 +56,11 @@ const SignupForm = () => {
           Password:
           <input className={styles.input} type="password" name="password" value={formData.password} onChange={handleChange} />
         </label>
-        <button className={styles.button} type="submit">Sign Up</button> {/* Apply button style */}
+        <label className={styles.label}>
+          Confirm Password:
+          <input className={styles.input} type="password" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange} />
+        </label>
+        <button className={styles.button} type="submit">Sign Up</button>
       </form>
     </div>
   );
