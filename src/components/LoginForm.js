@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation'; 
 import Link from 'next/link';
+import styles from "@/ui/login/login.module.css"
 
 const LoginForm = () => {
   const router = useRouter(); // Initialize useRouter hook
@@ -35,16 +36,14 @@ const LoginForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Email:
-        <input type="email" name="email" value={formData.email} onChange={handleChange} />
+      <label className={styles.fields}>
+        <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Email ID'/>
       </label>
-      <label>
-        Password:
-        <input type="password" name="password" value={formData.password} onChange={handleChange} />
+      <label className={styles.fields}>
+        <input type="password" name="password" value={formData.password} onChange={handleChange} placeholder='Password'/>
       </label>
       <Link href="/dashboard" >
-      <button type="submit">Login</button>
+      <button className={styles.login} type="submit">Login</button>
       </Link>
       
     </form>

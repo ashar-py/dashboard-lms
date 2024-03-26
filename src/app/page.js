@@ -5,6 +5,7 @@ import Link from 'next/link';
 import LoginForm from '../components/LoginForm';
 //import ForgotPasswordForm from '../components/ForgotPasswordForm';
 import axios from 'axios';
+import styles from "../ui/login/login.module.css"
 
 const API_URL = '/api'; 
 
@@ -37,27 +38,23 @@ const HomePage = () => {
   };
 
   return (
-    <div className="container">
-      <h1>Welcome</h1>
-      <div className="form-container">
-       
-        <div className="form">
-          <h2>Login</h2>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Welcome to TriniAI</h1>
+        <div className={styles.box}>
+          <h2>SignIN</h2>
           <LoginForm onSubmit={handleLogin} />
-        </div>
-       
-      </div>
-      
-      <div className="link-container">
-        <Link href="/forgotpassword">
+          <div className={styles.linkContainer}>
+        <Link className={styles.links} href="/forgotpassword">
           Forgot Password?
         </Link>
-        <span>|</span>
-        <Link href="/signup">
+        
+        <span>&nbsp;|&nbsp;</span>
+        <Link className={styles.links} href="/signup">
           Signup
         </Link>
         
       </div>
+        </div>
     </div>
   );
 };
