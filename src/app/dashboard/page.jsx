@@ -19,14 +19,14 @@ const DashboardPage = () => {
 
   // Define custom links for each title
   const links = {
-    "AP1 Submitted Cases": "/ap1-submitted-cases",
-    "AP1 Pending Cases": "/ap1-pending-cases",
-    "Requisition Received Cases": "/requisition-received-cases",
-    "Requisition Partially Responded": "/requisition-partially-responded",
-    "HMLR Cancellation in the next 7 days": "/hmlr-cancellation",
-    "Cancelled Cases with Priority in Place": "/cancelled-cases-priority",
-    "Cancelled Cases without Priority in Place": "/cancelled-cases-no-priority",
-    "COR FE Approval Pending": "/cor-fe-approval-pending"
+    "AP1 Submitted Cases": "dashboard/ap1_submitted",
+    "AP1 Pending Cases": "dashboard/ap1_pending",
+    "Requisition Received Cases": "dashboard/req_recived_cases",
+    "Requisition Partially Responded": "dashboard/req_recived_cases",
+    "HMLR Cancellation in the next 7 days": "dashboard/hmlr",
+    "Cancelled Cases with Priority in Place": "dashboard/cancel_case_withpriority",
+    "Cancelled Cases without Priority in Place": "dashboard/cancel_cases_withoutpriority",
+    "COR FE Approval Pending": "dashboard/corfe_apv_pending"
   };
 
   return (
