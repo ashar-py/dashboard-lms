@@ -1,0 +1,21 @@
+.container{
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+    gap: 150px;
+  }
+  
+  .button{
+    font-weight: 800;
+    background-color: transparent;
+    margin: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+  }
+  
+  .button:disabled{
+    cursor: not-allowed;
+    /* color: grey; */
+  }
