@@ -17,7 +17,7 @@ const DashboardPage = () => {
     "COR FE Approval Pending": 7
   };
 
-  // Define custom links for each title
+  
   const links = {
     "AP1 Submitted Cases": "dashboard/ap1_submitted",
     "AP1 Pending Cases": "dashboard/ap1_pending",
