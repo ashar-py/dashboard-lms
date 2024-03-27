@@ -1,0 +1,21 @@
+.footer {
+  width: 100%;
+  background-color:  black;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 0px;
+  position: fixed;
+
+  bottom: 0;
+
+  font-weight: 200;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 14px;
+  }
+}

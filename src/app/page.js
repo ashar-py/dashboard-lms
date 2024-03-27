@@ -5,7 +5,8 @@ import Link from 'next/link';
 import LoginForm from '../components/LoginForm';
 //import ForgotPasswordForm from '../components/ForgotPasswordForm';
 import axios from 'axios';
-import styles from "../ui/login/login.module.css"
+import styles from "../ui/login/login.module.css";
+import Footer from "@/ui/footer/footer";
 
 const API_URL = '/api'; 
 
@@ -55,6 +56,10 @@ const HomePage = () => {
         
       </div>
         </div>
+      <div>
+        <Footer/>
+      </div>
+        
     </div>
   );
 };
