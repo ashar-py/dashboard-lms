@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import styles from "@/ui/dashboard/table/table.module.css"
 import Pagination from '@/ui/pagination/pagination'
@@ -60,7 +61,7 @@ const RegisterPage = () => {
 		</tbody>
 	</table>
     <div className={styles.botBar}>
-        <Pagination></Pagination>
+        {/* <Pagination></Pagination> */}
     </div>
 </div>
 </div>
