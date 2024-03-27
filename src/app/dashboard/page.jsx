@@ -17,12 +17,25 @@ const DashboardPage = () => {
     "COR FE Approval Pending": 7
   };
 
+  // Define custom links for each title
+  const links = {
+    "AP1 Submitted Cases": "/ap1-submitted-cases",
+    "AP1 Pending Cases": "/ap1-pending-cases",
+    "Requisition Received Cases": "/requisition-received-cases",
+    "Requisition Partially Responded": "/requisition-partially-responded",
+    "HMLR Cancellation in the next 7 days": "/hmlr-cancellation",
+    "Cancelled Cases with Priority in Place": "/cancelled-cases-priority",
+    "Cancelled Cases without Priority in Place": "/cancelled-cases-no-priority",
+    "COR FE Approval Pending": "/cor-fe-approval-pending"
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.box}>
         {Object.keys(counts).map(title => (
           <div className={styles.item} key={title}>
-            <DashboardOption title={title} link={`/${title.toLowerCase().replace(/\s+/g, '-')}`} count={counts[title]} />
+            {/* Use custom link for each DashboardOption */}
+            <DashboardOption title={title} link={links[title]} count={counts[title]} />
           </div>
         ))}
       </div>
@@ -31,4 +44,3 @@ const DashboardPage = () => {
 };
 
 export default DashboardPage;
-
