@@ -30,6 +30,7 @@
     margin-bottom: 5px;
   }
   
+  .container input[type="text"],
   .container input[type="date"] {
     width: 100%;
     padding: 8px;
@@ -44,16 +45,17 @@
     .container {
       padding: 10px;
     }
-    
+  
     .container h1 {
       font-size: 20px;
     }
-    
+  
     .container h2 {
       font-size: 18px;
     }
-    
-    .container input[type="date"] {
+  
+    .container input[type="date"],
+    .container input[type="text"] {
       font-size: 14px;
     }
   }
