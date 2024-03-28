@@ -1,9 +1,9 @@
 "use client";
 import React from 'react'
-import styles from "@/ui/dashboard/table/table.module.css"
+import styles from "./details.module.css"
 import Pagination from '@/ui/pagination/pagination'
 
-const RegisterPage = () => {
+const Details = () => {
   return (
     <div className={styles.mainContainer}>
         <h2 className={styles.title}>Application to Register to Upload</h2>
@@ -68,4 +68,4 @@ const RegisterPage = () => {
   )
 }
 
-export default RegisterPage
+export default Details

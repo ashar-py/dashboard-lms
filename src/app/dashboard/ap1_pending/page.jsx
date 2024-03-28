@@ -56,10 +56,13 @@
 // export default Example;
 
 import React from 'react'
+import Details from "@/ui/dashboard/details/details.jsx"
 
 function page() {
   return (
-    <div>page</div>
+    <div>
+      <Details></Details>
+    </div>
   )
 }
 
