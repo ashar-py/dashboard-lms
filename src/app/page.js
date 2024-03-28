@@ -40,9 +40,9 @@ const HomePage = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Welcome to TriniAI</h1>
+      <h1 className={styles.title}>Login to the system</h1>
         <div className={styles.box}>
-          <h2>SignIN</h2>
+          <h2>Signin</h2>
           <LoginForm onSubmit={handleLogin} />
           <div className={styles.linkContainer}>
         <Link className={styles.links} href="/forgotpassword">
