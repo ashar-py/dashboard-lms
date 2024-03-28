@@ -8,8 +8,11 @@ const Navbar = () => {
 
   return (
     <div className={styles.container}>
+      <Link href="/dashboard">
+        <button> &lt; &nbsp;Go Back</button>
+      </Link>
       <Link href="/">
-        <button>Logout</button>
+        <button className={styles.logout}>Logout</button>
       </Link>
     </div>
   );
