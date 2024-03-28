@@ -1,7 +1,8 @@
 "use client";
 import React from 'react'
 import styles from "./details.module.css"
-import Pagination from '@/ui/pagination/pagination'
+import Pagination from '@/ui/pagination/pagination';
+import Link from 'next/link';
 
 const Details = () => {
   return (
@@ -25,8 +26,9 @@ const Details = () => {
 				<td>Cell 1</td>
 				<td>Cell 2</td>
 				<td>Cell 3</td>
+				
 				<td>
-                    <button className={styles.button}>View Record</button>
+				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
                 </td>
 
 			</tr>
@@ -34,28 +36,36 @@ const Details = () => {
 				<td>Cell 1</td>
 				<td>Cell 2</td>
 				<td>Cell 3</td>
-				<td><button className={styles.button}>View Record</button></td>
+				<td>
+				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+                </td>
 
 			</tr>
 			<tr>
 				<td>Cell 1</td>
 				<td>Cell 2</td>
 				<td>Cell 3</td>
-				<td><button className={styles.button}>View Record</button></td>
+				<td>
+				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+                </td>
 
 			</tr>
 			<tr>
 				<td>Cell 1</td>
 				<td>Cell 2</td>
 				<td>Cell 3</td>
-				<td><button className={styles.button}>View Record</button></td>
+				<td>
+				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+                </td>
 
 			</tr>
 			<tr>
 				<td>Cell 1</td>
 				<td>Cell 2</td>
 				<td>Cell 3</td>
-				<td><button className={styles.button}>View Record</button></td>
+				<td>
+				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+                </td>
 
 			</tr>
 		</tbody>
