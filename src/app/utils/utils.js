@@ -1,6 +1,4 @@
 "use client";
-import { ReportGmailerrorred } from '@mui/icons-material';
-// utils/emailUtils.js
 import nodemailer from 'nodemailer';
 
 export const generateOTP = () => {
@@ -11,14 +9,14 @@ export const sendOTPByEmail = (email, otp) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'pawarprasadvijay@gmail.com', 
+      user: 'pawarprasadvijay@gmail.com',
       pass: 'Vvsp@6499',
     },
   });
 
   const mailOptions = {
     from: 'pawarprasadvijay@gmail.com',
-    to: 'prasadvijaypawar6499@gmail.com',
+    to: email, // Use the user's email provided as a parameter
     subject: 'OTP Verification',
     text: `Your OTP for registration is: ${otp}`,
   };
@@ -31,3 +29,4 @@ export const sendOTPByEmail = (email, otp) => {
     }
   });
 };
+

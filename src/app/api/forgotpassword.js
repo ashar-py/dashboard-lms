@@ -26,8 +26,8 @@
 
 "use client";
 // pages/api/forgotpassword.js
-import { users } from '../../db';
-import { generateOTP, sendOTPByEmail } from '../../utils/utils';
+import { users } from "@/app/db";
+import { generateOTP, sendOTPByEmail } from '@/app/utils/utils';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {

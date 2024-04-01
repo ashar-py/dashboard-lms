@@ -24,9 +24,23 @@
 
 
 
-// db.js
-const users = [];
+const users = [
+  {
+    id: 1,
+    username: 'user1',
+    email: 'prasadvijaypawar6499@gmail.com',
+    password: 'password1',
+  },
+  {
+    id: 2,
+    username: 'user2',
+    email: 'chaudharibhagyesh123@gmail.com',
+    password: 'password2',
+  },
+  // Add more sample users as needed
+];
 
 module.exports = {
   users,
 };
+
