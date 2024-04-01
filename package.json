@@ -15,9 +15,11 @@
     "@mui/material": "^5.15.14",
     "@mui/x-date-pickers": "^7.0.0",
     "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
     "material-react-table": "^2.12.1",
     "mssql": "^10.0.2",
     "next": "14.1.4",
+    "nodemailer": "^6.9.13",
     "react": "^18",
     "react-dom": "^18"
   },
