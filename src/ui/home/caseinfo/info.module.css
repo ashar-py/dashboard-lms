@@ -1,10 +1,10 @@
-.container {
+/* .container {
   width: 100%;
   margin: 0 auto;
-  /* padding: 20px; */
-  /* display: flex; */
+  padding: 20px;
+  display: flex;
   flex-direction: row;
-/* gap: 20px; */
+gap: 20px;
 }
 
 .container h1 {
@@ -54,7 +54,7 @@
 }
 
 /* Responsive Styles */
-
+/*
 @media (max-width: 768px) {
   .container {
     padding: 10px;
@@ -72,24 +72,50 @@
   .container input[type="text"] {
     font-size: 14px;
   }
-}
+} */
 
 
 .container{
+  margin: 0;
   padding: 20px;
-  margin: 10px;
 }
 
-
-
-.basicInfo{
+.accordion{
+  border-radius: 15px;
+  display: block;
+  margin: 30px;
+  cursor: pointer;
+  background-color: #001f61ca;
 }
 
-.container input{
-  width: 100%;
-  padding: 8px;
+.accordionItem{
+  padding: 15px 0;
+}
+
+.accordionContent{
+  display: flex;
+  padding: 30px 0;
+  padding-left: 50px;
+  gap: 20px;
+  background-color: white;
+}
+
+.accordionTitle{
+  margin: 0 10px;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.accordion input{
+  width: fit-content;
   font-size: 14px;
+  padding: 8px;
   border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+
+.accordion label{
+  margin: 5px;
 }

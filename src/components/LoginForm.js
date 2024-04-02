@@ -28,7 +28,7 @@ const LoginForm = () => {
       console.log(response.data);
 
       // Redirect to dashboard page upon successful login
-      router.push('/dashboard');
+      router.push('/home');
     } catch (error) {
       console.error('Login Error:', error.response.data);
     }
@@ -42,7 +42,7 @@ const LoginForm = () => {
       <label className={styles.fields}>
         <input type="password" name="password" value={formData.password} onChange={handleChange} placeholder='Password'/>
       </label>
-      <Link href="/dashboard" >
+      <Link href="/home" >
       <button className={styles.login} type="submit">Login</button>
       </Link>
       

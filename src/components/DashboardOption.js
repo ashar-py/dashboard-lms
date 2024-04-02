@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import styles from "@/ui/dashboard/dashboard.module.css"
+import styles from "@/ui/home/home.module.css"
 
 const DashboardOption = ({ title, link, count }) => {
   return (

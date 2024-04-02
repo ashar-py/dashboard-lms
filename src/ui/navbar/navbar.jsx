@@ -2,6 +2,7 @@
 import { usePathname } from "next/navigation";
 import styles from "@/ui/navbar/navbar.module.css";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
@@ -10,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div className={styles.container}>
-        <button type="button" onClick={router.back}> &lt; &nbsp;Go Back</button>
+      <div className={styles.logo}><Link href="/home"><Image src="/logo_standard.png" alt="" width="70" height="50"/></Link></div>
       <div className={styles.title}>{pathname.split("/").pop()}</div>
       <Link href="/">
         <button className={styles.logout}>Logout</button>

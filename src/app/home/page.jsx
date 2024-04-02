@@ -1,10 +1,10 @@
 "use client";
 
 import React from 'react';
-import styles from "@/ui/dashboard/dashboard.module.css"
+import styles from "@/ui/home/home.module.css"
 import DashboardOption from '@/components/DashboardOption';
 
-const DashboardPage = () => {
+const HomePage = () => {
   
   const counts = {
     "AP1 Submitted Cases": 10,
@@ -19,14 +19,14 @@ const DashboardPage = () => {
 
   
   const links = {
-    "AP1 Submitted Cases": "dashboard/ap1_submitted",
-    "AP1 Pending Cases": "dashboard/ap1_pending",
-    "Requisition Received Cases": "dashboard/req_recived_cases",
-    "Requisition Partially Responded": "dashboard/req_recived_cases",
-    "HMLR Cancellation in the next 7 days": "dashboard/hmlr",
-    "Cancelled Cases with Priority in Place": "dashboard/cancel_case_withpriority",
-    "Cancelled Cases without Priority in Place": "dashboard/cancel_cases_withoutpriority",
-    "COR FE Approval Pending": "dashboard/corfe_apv_pending"
+    "AP1 Submitted Cases": "home/ap1_submitted",
+    "AP1 Pending Cases": "home/ap1_pending",
+    "Requisition Received Cases": "home/req_recived_cases",
+    "Requisition Partially Responded": "home/req_recived_cases",
+    "HMLR Cancellation in the next 7 days": "home/hmlr",
+    "Cancelled Cases with Priority in Place": "home/cancel_case_withpriority",
+    "Cancelled Cases without Priority in Place": "home/cancel_cases_withoutpriority",
+    "COR FE Approval Pending": "home/corfe_apv_pending"
   };
 
   return (
@@ -43,4 +43,4 @@ const DashboardPage = () => {
   );
 };
 
-export default DashboardPage;
+export default HomePage;

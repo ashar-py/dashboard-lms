@@ -2,8 +2,9 @@
 .container {
  
    
-  background: linear-gradient(-120deg, #007bff, #d0314c);
-    color: black;
+    background: linear-gradient(-120deg, #007bff, #d0314c);
+    color: white;
+    font-weight: 500;
     display: flex;
     gap: auto;
     align-items: center;
