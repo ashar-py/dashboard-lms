@@ -1,6 +1,5 @@
-.container {
+/*.container {
   width: 100%;
-  
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -42,6 +41,7 @@ gap: 20px;
 }
 
 /* Responsive Styles */
+/*
 @media (max-width: 768px) {
   .container {
     padding: 10px;
@@ -59,4 +59,22 @@ gap: 20px;
   .container input[type="text"] {
     font-size: 14px;
   }
+}
+*/
+
+.container{
+  padding: 20px;
+  margin: 10px;
+}
+
+.basicInfo{
+}
+
+.container input{
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
