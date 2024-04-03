@@ -115,7 +115,7 @@ const CaseInfo = () => {
       <h2 className={styles.heading}>Post Completion Records</h2>
       <hr></hr>
       <div className={styles.accordion}>
-          <Accordion title="Pre-AP1" content={
+          <Accordion title="Pre-AP1 Cases" content={
             <form>
               <label>
                 Case Ref #:

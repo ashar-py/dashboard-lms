@@ -8,7 +8,7 @@ const Accordion = ({ title, content }) => {
     <div className={styles.accordionItem}>
       <div className={styles.accordionTitle} onClick={() => setIsActive(!isActive)}>
         <div>{title}</div>
-        <div>{isActive ? '' : ''}</div>
+        <div className={styles.indicator}>{isActive ? '-' : '+'}</div>
       </div>
       {isActive && <div className={styles.accordionContent}>{content}</div>}
     </div>
