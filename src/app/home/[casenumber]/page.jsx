@@ -5,11 +5,7 @@ import styles from "@/ui/home/caseinfo/info.module.css"; // Import the CSS modul
 import Accordion from "@/components/Accordion";
 
 const CaseInfo = () => {
-  const [ap1SubmittedDate, setAP1SubmittedDate] = useState("");
-  const [corReceivedDate, setCORReceivedDate] = useState("");
-  const [editPostCompletionsRecord, setEditPostCompletionsRecord] =
-    useState("");
-  const [caseRef, setCaseRef] = useState("");
+  const [deedsInDate, setdeedsInDate] = useState("");
   // Add state variables for the rest of the sections
 
   //   return (
@@ -118,23 +114,23 @@ const CaseInfo = () => {
           <Accordion title="Pre-AP1 Cases" content={
             <form>
               <label>
-                Case Ref #:
+                Deeds Chased SSL1
                 <input type="text" />
               </label>
               <label>
-                Case Ref #:
+                Deeds Chased SSL2
                 <input type="text" />
               </label>
               <label>
-                Case Ref #:
+                Report Fee Earner no Deeds
                 <input type="text" />
               </label>
               <label>
-                Case Ref #:
+              Deeds Chased SSL3
                 <input type="text" />
               </label>
               <label>
-                Case Ref #:
+              Deeds Chased SSL4
                 <input type="text" />
               </label>
             </form>
@@ -144,12 +140,12 @@ const CaseInfo = () => {
 
             <form>
               <label>
-                Case Ref #:
-                <input type="text" />
+                Deeds In
+                <input type="date" value={deedsInDate} onChange={(e) => setdeedsInDate(e.target.value)}/>
               </label>
               <label>
-                Case Ref #:
-                <input type="text" />
+                AP1 Submitted
+                <input type="date" />
               </label>
             </form>
 
@@ -158,19 +154,19 @@ const CaseInfo = () => {
 
             <form>
               <label>
-                Case Ref #:
+                Requisition Received
+                <input type="date" />
+              </label>
+              <label>
+                Requisition Dealt
+                <input type="date" />
+              </label>
+              <label>
+                Requisition Sent to FE
                 <input type="text" />
               </label>
               <label>
-                Case Ref #:
-                <input type="text" />
-              </label>
-              <label>
-                Case Ref #:
-                <input type="text" />
-              </label>
-              <label>
-                Case Ref #:
+                Requisition Responded by FE
                 <input type="text" />
               </label>
             </form>
@@ -179,15 +175,19 @@ const CaseInfo = () => {
           <Accordion title="Warning of Cancellation" content={
             <form>
               <label>
-                Case Ref #:
+                OS1 Expire Date
+                <input type="date" />
+              </label>
+              <label>
+                HMLR Cancellation
+                <input type="date" />
+              </label>
+              <label>
+                Warning of Cancellation Received
                 <input type="text" />
               </label>
               <label>
-                Case Ref #:
-                <input type="text" />
-              </label>
-              <label>
-                Case Ref #:
+                Extension Requested
                 <input type="text" />
               </label>
             </form>
@@ -196,19 +196,19 @@ const CaseInfo = () => {
           <Accordion title="COR Received" content={
             <form>
               <label>
-                Case Ref #:
+                COR Recieved
+                <input type="date" />
+              </label>
+              <label>
+                COR Sent to FE for Approval
                 <input type="text" />
               </label>
               <label>
-                Case Ref #:
+                COR Response from FE
                 <input type="text" />
               </label>
               <label>
-                Case Ref #:
-                <input type="text" />
-              </label>
-              <label>
-                Case Ref #:
+                COR Approved by FE
                 <input type="text" />
               </label>
             </form>
