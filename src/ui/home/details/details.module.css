@@ -1,29 +1,15 @@
 .mainContainer{
     margin: 0;
-    padding: 0;
+    padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: var(--primary);
-    height: 100vh;
     overflow: hidden;
-}
-
-.title{
-    color: white;
-    background-color: rgba(255,255,255,0.2);
-    padding: 25px;
-
 }
 
 .topBar{
     padding: 20px;
-    background-color: rgba(255,255,255,0.2);
+    background-color: var(--primary);
 }
 
-.botBar{
-    background-color: rgba(255,255,255,0.2);
-}
 
 .container {
 	position: absolute;
@@ -42,7 +28,7 @@
 .table th,
 .table td {
 	padding: 15px;
-	background-color: rgba(255,255,255,0.2);
+	background-color: var(--primary);
 	color: #fff;
 }
 
@@ -55,10 +41,6 @@
 		background-color: #55608f;
 	}
 } */
-
-.content tr:hover {
-    background-color: rgba(255,255,255,0.3);
-}
 /* 
 	td {
 		position: relative;
@@ -87,10 +69,20 @@
     cursor: pointer;
 }
 
+.button:hover{
+	background-color: #d3d3d3;
+}
+
 /* table.module.css */
 .link {
 	color: blue;
 	text-decoration: underline;
 	cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .table {
+      max-width: 500px;
+    }
   }
   

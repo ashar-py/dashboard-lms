@@ -8,6 +8,7 @@ const Details = () => {
   return (
     <div className={styles.mainContainer}>
         <h2 className={styles.title}>Application to Register to Upload</h2>
+		<hr></hr>
     <div class={styles.container}>
         <div className={styles.topBar}>
             Search element...

@@ -112,3 +112,9 @@ a {
   --dark: #000000;
   --secondary: #d8d34b;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
