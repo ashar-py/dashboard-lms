@@ -40,7 +40,7 @@ const HomePage = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Login to the system</h1>
+      <h1 className={styles.title}>Login to ANZA</h1>
         <div className={styles.box}>
           <h2>Signin</h2>
           <LoginForm onSubmit={handleLogin} />

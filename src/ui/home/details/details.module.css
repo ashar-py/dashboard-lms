@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
-    background: linear-gradient(120deg, #007bff, #d0314c);
+    background: var(--primary);
     height: 100vh;
     overflow: hidden;
 }

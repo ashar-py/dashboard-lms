@@ -1,6 +1,6 @@
 
 .container {
-    background: linear-gradient(-120deg, #007bff, #d0314c);
+    background: var(--dark);
     color: white;
     font-weight: 500;
     display: flex;
@@ -30,6 +30,10 @@
   font-weight: bold;
   text-decoration: none;
   padding: 0 30px;
+}
+
+.logo{
+  margin: 0 15px;
 }
   
   

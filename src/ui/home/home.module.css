@@ -54,42 +54,41 @@
 .container {
     display: flex;
     justify-content: center;
-    background: linear-gradient(120deg, #007bff, #d0314c);
+    background: var(--primary);
     height: 100vh;
     width: 100%;
   }
   
   .box {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns here */
-    grid-gap: 100px;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns here */
+    grid-gap: 30px;
     /* max-width: 1200px; */
-    width: 75%;
+    width: 70%;
     padding: 20px;
     
   }
   
   .itemLink {
     border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
     border-radius: 8px;
     background-color: white;
   }
   
-  .itemLink h2 {
-    margin-bottom: 10px;
-
-  }
-  
-  .itemLink p {
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
+.itemLink p{
+  font-size: 20px;
+}
   
   .itemLink a {
     display: inline-block;
-    padding: 10px 20px;
+    height: 40%;
+    padding: 7px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;

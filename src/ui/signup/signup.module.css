@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(120deg, #007bff, #d0314c);
+    background: var(--primary);
   }
   
   .form {
@@ -29,7 +29,7 @@
   .button {
     width: 100%;
     padding: 10px 15px;
-    background-color: #007bff;
+    background-color: var(--dark);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -37,6 +37,6 @@
   }
   
   .button:hover {
-    background-color: #0056b3;
+    background-color: #232323;
   }
   

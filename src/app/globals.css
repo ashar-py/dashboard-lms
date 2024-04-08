@@ -105,3 +105,10 @@ a {
     color-scheme: dark;
   }
 } */
+
+:root{
+  --primary: #478275;
+  --text: #FFFFFF;
+  --dark: #000000;
+  --secondary: #d8d34b;
+}
