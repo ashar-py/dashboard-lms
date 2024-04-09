@@ -6,7 +6,7 @@
 }
 
 .topBar{
-    padding: 20px;
+    padding: 1%;
     background-color: #35665b;
 	color: var(--text);
 }
@@ -28,7 +28,7 @@
 
 .table th,
 .table td {
-	padding: 20px;
+	padding: 0.8%;
 	background-color: var(--primary);
 	color: #fff;
 	border-bottom: 0.5px solid var(--secondary);
