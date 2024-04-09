@@ -20,7 +20,7 @@
 }
 
 .table {
-	width: 1500px;
+	width: 90vw;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -31,6 +31,7 @@
 	padding: 20px;
 	background-color: var(--primary);
 	color: #fff;
+	border-bottom: 0.5px solid var(--secondary);
 }
 
 .table th {
@@ -80,10 +81,20 @@
 	text-decoration: underline;
 	cursor: pointer;
   }
+  /* @media (max-width: 992px) {
+	.table{
+		max-width: 800px;
+	}
+  }
+  @media (max-width: 1200px) {
+	.table{
+		max-width: 1000px;
+	}
+  }
 
   @media (max-width: 768px) {
     .table {
       max-width: 500px;
     }
   }
-  
+   */

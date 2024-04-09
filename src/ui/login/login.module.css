@@ -53,6 +53,7 @@
     border: none;
     background: none;
     outline: none;
+    color: var(--secondary);
   }
 
   .fields input:focus{
