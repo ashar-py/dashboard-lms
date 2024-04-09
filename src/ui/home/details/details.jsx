@@ -3,6 +3,7 @@ import React from 'react'
 import styles from "./details.module.css"
 import Pagination from '@/ui/pagination/pagination';
 import Link from 'next/link';
+import { MdSearch } from "react-icons/md";
 
 const Details = () => {
   return (
@@ -11,7 +12,7 @@ const Details = () => {
 		<hr></hr>
     <div class={styles.container}>
         <div className={styles.topBar}>
-            Search element...
+            <MdSearch/> &nbsp;Search element...
         </div>
 	<table className={styles.table}>
 		<thead>
@@ -64,6 +65,16 @@ const Details = () => {
 				<td>Cell 1</td>
 				<td>Cell 2</td>
 				<td>Cell 3</td>
+				<td>
+				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+                </td>
+
+			</tr>
+			<tr>
+				<td>Cell 1</td>
+				<td>Cell 2</td>
+				<td>Cell 3</td>
+				
 				<td>
 				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
                 </td>

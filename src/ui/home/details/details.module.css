@@ -7,7 +7,8 @@
 
 .topBar{
     padding: 20px;
-    background-color: var(--primary);
+    background-color: #35665b;
+	color: var(--text);
 }
 
 
@@ -19,7 +20,7 @@
 }
 
 .table {
-	width: 1200px;
+	width: 1500px;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -27,7 +28,7 @@
 
 .table th,
 .table td {
-	padding: 15px;
+	padding: 20px;
 	background-color: var(--primary);
 	color: #fff;
 }
