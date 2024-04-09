@@ -63,7 +63,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns here */
     /* max-width: 1200px; */
-    width: 80%;
+    width: 88%;
     padding: 30px;
   }
 
@@ -84,7 +84,7 @@
   }
 
   .itemLink h4{
-    flex: 3;
+    flex: 5;
   }
   
 .itemLink p{
