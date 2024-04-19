@@ -8,6 +8,8 @@ import { MdSearch } from "react-icons/md";
 const Details = () => {
   return (
     <div className={styles.mainContainer}>
+		 <h3 className={styles.title}>DASHBOARD</h3>
+		 <hr></hr>
         <h2 className={styles.title}>Application to Register to Upload</h2>
 		<hr></hr>
     <div class={styles.container}>

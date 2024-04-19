@@ -1,11 +1,12 @@
 .mainContainer{
-    margin: 0;
+    margin-bottom: 10px;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
 
 .topBar{
+	margin-top: 55px;
     padding: 1%;
     background-color: #35665b;
 	color: var(--text);
@@ -63,9 +64,9 @@
 
 .button {
     padding: 10px 20px;
-    background-color: white;
+    background-color:black;
     border: none;
-    color: black;
+    color:  white;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
