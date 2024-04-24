@@ -21,9 +21,11 @@
 // module.exports = prisma;
 
 
-import { PrismaClient } from '@prisma/client';
+// import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '@prisma/client'
+let prisma = new PrismaClient()
 
-let prisma;
+// let prisma;
 
 if (process.env.NODE_ENV === 'production') {
   prisma = new PrismaClient();

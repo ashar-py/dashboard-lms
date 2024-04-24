@@ -1,7 +1,7 @@
 import React from 'react';
-import ForgotPasswordForm from '../app/components/ForgotPasswordForm';
-import ResetPasswordForm from '../app/components/ResetPasswordForm';
-import prisma from '../app/lib/prisma';
+import ForgotPasswordForm from '@/components/ForgotPasswordForm';
+import ResetPasswordForm from '@/components/ResetPasswordForm';
+import prisma from '@/app/lib/prisma';
 
 const ResetPasswordPage = ({ searchParams }) => {
     const resetPasswordToken = searchParams.token;
@@ -15,8 +15,8 @@ const ResetPasswordPage = ({ searchParams }) => {
             if (!user) {
                 return <div>Invalid token</div>;
             }
-
-            return <ChangePasswordForm resetPasswordToken={resetPasswordToken} />;
+            return ;
+            // return <ChangePasswordForm resetPasswordToken={resetPasswordToken} />;
         });
     } else {
         return <ResetPasswordForm />;

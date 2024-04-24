@@ -1,28 +1,49 @@
+"use client";
+// ForgotPasswordPage.js
 import React, { useState } from 'react';
-import { resetPassword } from '../app/actions/users/resetPassword';
+import { changePassword } from '../app/actions/users/changePassword';
+import styles from "@/ui/forgotpassword/forgot.module.css";
 
-const ResetPasswordForm = () => {
-    const [email, setEmail] = useState("");
+const ResetPasswordForm = ({resetPasswordToken}) => {
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
     const [message, setMessage] = useState("");
 
     const handleSubmit = async () => {
-        const responseMessage = await resetPassword(email);
+        if (password !== confirmPassword) {
+            setMessage("Passwords do not match");
+            return;
+        }
+
+        const responseMessage = await changePassword(resetPasswordToken, password);
+
         setMessage(responseMessage);
-    };
+    }
+
+    
 
     return (
-        <div className="flex flex-col gap-4">
-            <h1>Reset Password</h1>
-            <input 
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+        <div className={styles.container}>
+            <h1 className={styles.title}>Change Password</h1>
+            <form className={styles.form}>
+            <input className={styles.input}
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
             />
-            <button onClick={handleSubmit}>
-                Reset Password
+            <input className={styles.input}
+                type="password"
+                placeholder="Confirm Password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+            />
+            <button className={styles.button}
+             onClick={handleSubmit}>
+                Change Password
             </button>
-            <p>{message}</p>
+            </form>
+            <p className={styles.message}>{message}</p>
         </div>
     );
 };

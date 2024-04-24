@@ -4,12 +4,13 @@ import styles from "./details.module.css"
 import Pagination from '@/ui/pagination/pagination';
 import Link from 'next/link';
 import { MdSearch } from "react-icons/md";
+import {usePathname} from "next/navigation"
+
 
 const Details = () => {
+	const pathname = usePathname();
   return (
     <div className={styles.mainContainer}>
-		 <h3 className={styles.title}>DASHBOARD</h3>
-		 <hr></hr>
         <h2 className={styles.title}>Application to Register to Upload</h2>
 		<hr></hr>
     <div class={styles.container}>
@@ -32,7 +33,7 @@ const Details = () => {
 				<td>Cell 3</td>
 				
 				<td>
-				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+				<Link href={pathname+"/12345"}> <button className={styles.button} >View Record</button></Link>
                 </td>
 
 			</tr>
@@ -41,7 +42,7 @@ const Details = () => {
 				<td>Cell 2</td>
 				<td>Cell 3</td>
 				<td>
-				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+				<Link href={pathname+"/12345"}> <button className={styles.button} >View Record</button></Link>
                 </td>
 
 			</tr>
@@ -50,7 +51,7 @@ const Details = () => {
 				<td>Cell 2</td>
 				<td>Cell 3</td>
 				<td>
-				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+				<Link href={pathname+"/12345"}> <button className={styles.button} >View Record</button></Link>
                 </td>
 
 			</tr>
@@ -59,7 +60,7 @@ const Details = () => {
 				<td>Cell 2</td>
 				<td>Cell 3</td>
 				<td>
-				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+				<Link href={pathname+"/12345"}> <button className={styles.button} >View Record</button></Link>
                 </td>
 
 			</tr>
@@ -68,7 +69,7 @@ const Details = () => {
 				<td>Cell 2</td>
 				<td>Cell 3</td>
 				<td>
-				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+				<Link href={pathname+"/12345"}> <button className={styles.button} >View Record</button></Link>
                 </td>
 
 			</tr>
@@ -78,7 +79,7 @@ const Details = () => {
 				<td>Cell 3</td>
 				
 				<td>
-				<Link href="./12345"> <button className={styles.button} >View Record</button></Link>
+				<Link href={pathname+"/12345"}> <button className={styles.button} >View Record</button></Link>
                 </td>
 
 			</tr>
