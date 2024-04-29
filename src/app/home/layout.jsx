@@ -1,5 +1,7 @@
+
 import Footer from "@/ui/footer/footer";
 import Navbar from "@/ui/navbar/navbar";
+import Breadcrumbs from "../../components/Breadcrumbs";
 
 const Layout = ({children}) => {
     return (
@@ -7,6 +9,7 @@ const Layout = ({children}) => {
             
             <div >
                 <Navbar/>
+                <Breadcrumbs/>
                 {children}
                 <Footer/>
             </div>
