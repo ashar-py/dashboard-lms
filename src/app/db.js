@@ -1,21 +1,21 @@
 // // db.js
 
-// const sql = require('mssql');
+const sql = require('mssql');
 
-// const config = {
-//   user: 'your_username',
-//   password: 'your_password',
-//   server: 'your_server_name', // You can use 'localhost' if running locally
-//   database: 'your_database_name',
-// };
+const config = {
+  user: 'anzasjpr_postcomp',
+  password: 'hP.W8^d1&pNO',
+  server: '207.174.214.239', // You can use 'localhost' if running locally
+  database: 'anzasjpr_postcompletions',
+};
 
-// const poolPromise = new sql.ConnectionPool(config)
-//   .connect()
-//   .then((pool) => {
-//     console.log('Connected to SQL Server');
-//     return pool;
-//   })
-//   .catch((err) => console.log('Database Connection Failed! Bad Config: ', err));
+const poolPromise = new sql.ConnectionPool(config)
+  .connect()
+  .then((pool) => {
+    console.log('Connected to SQL Server');
+    return pool;
+  })
+  .catch((err) => console.log('Database Connection Failed! Bad Config: ', err));
 
 // module.exports = {
 //   sql,
@@ -41,6 +41,8 @@ const users = [
 ];
 
 module.exports = {
+  sql,
+  poolPromise,
   users,
 };
 
